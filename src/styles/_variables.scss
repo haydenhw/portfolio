@@ -1,0 +1,59 @@
+// colors
+$test-border-color: transparent;
+// $test-border-color: black;
+
+$black-faded: #424242;
+$black-medium: #212121;
+$blue: #3e86c7;
+$green: #33b85e;
+$green-light: #3dcb81;
+$green-dark: #01A150;
+$grey-light: #e2e2e2;
+$grey-medium: #bdbdbd;
+$grey-dark: #b0b0b0;
+$grey-super-dark: #757575;
+$grey-super-light: #fafafa;
+$orange: #f5a732;
+$red: #ed7b61;
+$teal: #5aaba7;
+$teal-light: #55b6b1;
+$teal-super-light: #5ec3be;
+$white: #ffffff;
+$indigo: #4055d4;
+
+$color-primary: $green;
+$color-primary: $teal;
+$color-primary: #26A69A;
+
+$color-pcb-flow: $orange;
+$color-pomtracker: $teal;
+$color-anki-assistant: $green;
+
+//fonts
+// $font-primary: 'Montserrat';
+$font-primary:  'Lato', sans-serif;
+// $font-primary:  'Lato', sans-serif;
+// $font-secondary: 'Times New Roman';
+$font-secondary: 'Roboto';
+// $font-secondary: 'Lato';
+
+// breakpoints
+$break-mobile: 480px;
+$break-tablet: 768px;
+$break-medium: 960px;
+$break-wide: 1024px;
+
+
+$breakpoint-show-nav-value: 700;
+$breakpoint-grid-layout-value: 1200;
+$breakpoint-swap-about-divider-value: 650;
+$breakpoint-swap-about-image-value: 480;
+
+$breakpoint-show-nav: $breakpoint-show-nav-value * 1px;
+$breakpoint-swap-about-image: $breakpoint-swap-about-image-value * 1px;
+$breakpoint-swap-about-divider: $breakpoint-swap-about-divider-value * 1px;
+$breakpoint-grid-layout: $breakpoint-grid-layout-value * 1px;
+
+$breakpoint-show-nav-less-one: $breakpoint-swap-about-image-value - 1 * 1px;
+$breakpoint-swap-about-divider-less-one: $breakpoint-swap-about-divider-value - 1 * 1px;
+$breakpoint-swap-about-image-less-one: $breakpoint-swap-about-image-value - 1 * 1px;

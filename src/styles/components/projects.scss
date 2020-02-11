@@ -1,0 +1,132 @@
+.project-section {
+  margin: 0 auto;
+  max-width: 1450px;
+
+  @media only screen and (min-width: 700px) {
+    padding: 0 20px;
+  }
+}
+
+.project-item {
+  text-align: left;
+  font-size: 1em;
+
+  .pomtracker-mockup-sm-screen {
+    @media only screen and (min-width: $breakpoint-grid-layout) {
+      @include hide();
+    }
+  }
+
+  .pomtracker-mockup-lg-screen {
+    @include hide();
+
+    @media only screen and (min-width: $breakpoint-grid-layout) {
+      @include unhide();
+    }
+  }
+}
+
+.project-screenshot {
+  max-width: 100%;
+}
+
+.project-description-wrapper {
+  @media only screen and (min-width: 500px) and (max-width: ($breakpoint-grid-layout-value - 1) * 1px) {
+
+    &.pcb-flow-description-wrapper {
+      padding-top: 0;
+    }
+  }
+
+  @media only screen and (min-width: 750px) and (max-width: 999px) {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  @media only screen and (min-width: 1000px) and (max-width: ($breakpoint-grid-layout-value - 1) * 1px) {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  @media only screen and (min-width: $breakpoint-grid-layout) {
+    padding-top: 25px;
+    max-width: 390px;
+  }
+}
+
+.pomtracker-description-wrapper {
+  @media only screen and (min-width: $breakpoint-grid-layout) {
+    padding-top: 60px;
+  }
+}
+
+.pomtracker-description-wrapper, .anki-assistant-description-wrapper {
+  @media only screen and (min-width: 500px) and (max-width: ($breakpoint-grid-layout-value - 1) * 1px) {
+    padding-top: 20px;
+  }
+}
+
+.project-title-text {
+  display: inline-block;
+  font-size: 1.5em;
+
+  @media only screen and (min-width: $breakpoint-grid-layout) {
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
+.project-title-divider {
+  margin-top: 3px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid;
+  width: 100%;
+}
+
+.project-description {
+  font-size: 1em;
+  margin-top: 0;
+
+
+  @media only screen and (min-width: $breakpoint-grid-layout) {
+    margin-top: 15px;
+  }
+}
+
+.project-tech-icons {
+  font-size: 1.2em;
+  margin: 16px 0;
+}
+
+.project-tech-icon {
+  margin-right: 5px;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.project-link {
+  font-weight: 600;
+
+  &:hover {
+    color: black;
+  }
+}
+
+// .project-app-link {
+//   // border: 1px solid $test-border-color;
+//   display: block;
+//   margin: 50px 0;
+//   width: 100%;
+// }
+//
+// .project-app-screenshot-container {
+//   margin: 0 auto;
+//   width: 75%;
+// }
+//
+// .project-app-screenshot {
+//   border: 1px solid $grey-light;
+//   max-width: 100%;
+// }

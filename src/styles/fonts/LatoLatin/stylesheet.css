@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'LatoLatin';
+    src: url('LatoLatin-Thin.eot');
+    src: url('LatoLatin-Thin.eot?#iefix') format('embedded-opentype'),
+        url('LatoLatin-Thin.woff2') format('woff2'),
+        url('LatoLatin-Thin.woff') format('woff'),
+        url('LatoLatin-Thin.ttf') format('truetype'),
+        url('LatoLatin-Thin.svg#LatoLatin-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoLatin';
+    src: url('LatoLatin-Light.eot');
+    src: url('LatoLatin-Light.eot?#iefix') format('embedded-opentype'),
+        url('LatoLatin-Light.woff2') format('woff2'),
+        url('LatoLatin-Light.woff') format('woff'),
+        url('LatoLatin-Light.ttf') format('truetype'),
+        url('LatoLatin-Light.svg#LatoLatin-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoLatin';
+    src: url('LatoLatin-Light_1.eot');
+    src: url('LatoLatin-Light_1.eot?#iefix') format('embedded-opentype'),
+        url('LatoLatin-Light_1.woff2') format('woff2'),
+        url('LatoLatin-Light_1.woff') format('woff'),
+        url('LatoLatin-Light_1.ttf') format('truetype'),
+        url('LatoLatin-Light_1.svg#LatoLatin-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoLatin';
+    src: url('LatoLatin-Light_2.eot');
+    src: url('LatoLatin-Light_2.eot?#iefix') format('embedded-opentype'),
+        url('LatoLatin-Light_2.woff2') format('woff2'),
+        url('LatoLatin-Light_2.woff') format('woff'),
+        url('LatoLatin-Light_2.ttf') format('truetype'),
+        url('LatoLatin-Light_2.svg#LatoLatin-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoLatin';
+    src: url('LatoLatin-Light_3.eot');
+    src: url('LatoLatin-Light_3.eot?#iefix') format('embedded-opentype'),
+        url('LatoLatin-Light_3.woff2') format('woff2'),
+        url('LatoLatin-Light_3.woff') format('woff'),
+        url('LatoLatin-Light_3.ttf') format('truetype'),
+        url('LatoLatin-Light_3.svg#LatoLatin-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoLatin';
+    src: url('LatoLatin-Thin_1.eot');
+    src: url('LatoLatin-Thin_1.eot?#iefix') format('embedded-opentype'),
+        url('LatoLatin-Thin_1.woff2') format('woff2'),
+        url('LatoLatin-Thin_1.woff') format('woff'),
+        url('LatoLatin-Thin_1.ttf') format('truetype'),
+        url('LatoLatin-Thin_1.svg#LatoLatin-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoLatin';
+    src: url('LatoLatin-Thin_2.eot');
+    src: url('LatoLatin-Thin_2.eot?#iefix') format('embedded-opentype'),
+        url('LatoLatin-Thin_2.woff2') format('woff2'),
+        url('LatoLatin-Thin_2.woff') format('woff'),
+        url('LatoLatin-Thin_2.ttf') format('truetype'),
+        url('LatoLatin-Thin_2.svg#LatoLatin-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoLatin';
+    src: url('LatoLatin-Light_4.eot');
+    src: url('LatoLatin-Light_4.eot?#iefix') format('embedded-opentype'),
+        url('LatoLatin-Light_4.woff2') format('woff2'),
+        url('LatoLatin-Light_4.woff') format('woff'),
+        url('LatoLatin-Light_4.ttf') format('truetype'),
+        url('LatoLatin-Light_4.svg#LatoLatin-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoLatin';
+    src: url('LatoLatin-Light_5.eot');
+    src: url('LatoLatin-Light_5.eot?#iefix') format('embedded-opentype'),
+        url('LatoLatin-Light_5.woff2') format('woff2'),
+        url('LatoLatin-Light_5.woff') format('woff'),
+        url('LatoLatin-Light_5.ttf') format('truetype'),
+        url('LatoLatin-Light_5.svg#LatoLatin-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+

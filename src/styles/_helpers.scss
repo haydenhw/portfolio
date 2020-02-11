@@ -1,0 +1,36 @@
+%top-container {
+  @media only screen and (min-width: 500px) {
+    padding: 0 2%;
+  }
+
+  @media only screen and (min-width: 800px) {
+    padding: 0 4%;
+  }
+
+  @media only screen and (min-width: 1300px) {
+    padding: 0 6%;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    padding: 0 6%;
+  }
+}
+
+.main-content {
+  @media only screen and (min-width: 700px) {
+    font-size: 1.2em;
+  }
+}
+
+// theme colors
+.theme-color-pcb-flow {
+  color: $orange;
+}
+
+.theme-color-pomtracker {
+  color: $teal;
+}
+
+.theme-color-anki-assistant {
+  color: $green;
+}

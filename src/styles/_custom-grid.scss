@@ -1,0 +1,88 @@
+.col-description {
+  padding: 0 20px;
+
+
+  @media only screen and (min-width: $breakpoint-grid-layout) {
+    padding-top: 30px;
+  }
+
+  // padding-top: 60px;
+
+  // @media only screen and (min-width: 960px) {
+  //   padding-left: 50px;
+  //   padding-top: 0;
+  //   text-align: left;
+  // }
+}
+
+.col-about {
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
+    border: none;
+    width: 50%;
+  }
+}
+
+.col-about-left {
+  text-align: center;
+
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
+    padding-left: 0;
+    width: 50%;
+  }
+
+  @media only screen and (min-width: 900px) {
+    width: 40%;
+  }
+}
+
+.col-about-right {
+  padding-top: 5%;
+
+  @media only screen and (min-width: 900px) {
+    width: 60%;
+  }
+}
+
+.col-screenshot {
+  text-align: center;
+}
+
+$row-spacing-sm-screen: 75;
+$row-spacing-med-screen: 110;
+$row-spacing-lg-screen: 150;
+
+.project-row {
+  padding-bottom: $row-spacing-sm-screen * 1px;
+
+  @media only screen and (min-width: 1100px) {
+    padding-bottom: $row-spacing-med-screen * 1px;
+  }
+
+  @media only screen and (min-width: 1300px) {
+    padding-bottom: $row-spacing-med-screen * 1px;
+  }
+}
+
+.pcb-flow-row {
+  @media only screen and (min-width: 500px) and (max-width: 1099px) {
+    padding-bottom: $row-spacing-sm-screen * .75 * 1px;
+  }
+
+  @media only screen and (min-width: 1100px) and (max-width: ($breakpoint-grid-layout-value - 1) * 1px) {
+    padding-bottom: $row-spacing-med-screen * .55 * 1px;
+  }
+}
+
+.pomtracker-row {
+  @media only screen and (min-width: $breakpoint-grid-layout) {
+    padding-bottom: $row-spacing-med-screen * 1.1 * 1px;
+  }
+
+  @media only screen and (min-width: 1300px) {
+    padding-bottom: $row-spacing-lg-screen * 1.2 * 1px;
+  }
+}
+
+.anki-assistant-row {
+  padding-bottom: 0;
+}

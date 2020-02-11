@@ -1,0 +1,13 @@
+.contact {
+  position: relative;
+  text-align: left;
+  line-height: 2;
+}
+
+.contact-footer {
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 20px;
+  position: absolute;
+  transform: translateX(-50%);
+}

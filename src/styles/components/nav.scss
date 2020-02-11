@@ -1,0 +1,162 @@
+.nav {
+  color: $black-faded;
+  border-bottom: 1px solid;
+  border-color: transparent;
+  font-weight: 300;
+  line-height: 50px;
+  overflow: hidden;
+  padding-top: 50px;
+  position: fixed;
+  height: 50px;
+  transition: height .4s ease, background-color 1s ease-in;
+  width: 100%;
+  z-index: 1000;
+
+  @media only screen and (min-width: $breakpoint-show-nav) {
+    height: auto;
+    line-height: 1;
+    padding: 15px 0;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+
+  &.has-background {
+    background-color: rgba(0,0,0,.8);
+    box-shadow: 0 0 50px -10px rgba(0,31,48,.2);
+    color: $grey-super-light;
+    transition: height .4s ease, background-color .6s ease-in;
+  }
+
+  &.is-active {
+    @media only screen and (max-width: $breakpoint-show-nav-less-one) {
+      background-color: white;
+      color: $black-faded;
+      font-weight: 400;
+      //background-color: rgba(0,0,0,.8);
+      //color: white;
+      border-color: $grey-super-light;
+      box-shadow: 0 0 50px -10px rgba(0,31,48,.2);
+      height: 118px;
+      opacity: .9;
+      padding-top: 20px;
+    }
+  }
+}
+
+.nav-container {
+  @extend %top-container;
+  @media only screen and (min-width: $breakpoint-show-nav) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.nav-left, .nav-right {
+  border: 1px solid $test-border-color;
+
+  @media only screen and (min-width: $breakpoint-show-nav) {
+    width: 50%;
+  }
+}
+
+.nav-left {
+  @include hide();
+  text-align: left;
+
+  @media only screen and (min-width: $breakpoint-show-nav) {
+    @include unhide();
+    font-size: 1.1em;
+  }
+
+  &.is-visible {
+    @include unhide();
+  }
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.nav-menu-item {
+  display: block;
+  line-height: 1;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  //transition: all .2s ease-in-out;
+  text-decoration: inherit;
+
+  @media only screen and (min-width: $breakpoint-show-nav) {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  &:hover {
+    color: $black-faded;
+    font-weight: 400;
+    transition: none;
+
+    &.not-top {
+      color: black;
+
+      @media only screen and (min-width: $breakpoint-show-nav) {
+        color: white;
+      }
+    }
+  }
+
+  &.is-active {
+    // color: $color-primary;
+  }
+}
+
+.nav-contact-link {
+  @extend %contact-link;
+
+  &:hover {
+    color: white;
+
+    &.is-top {
+      color: black;
+    }
+  }
+}
+
+.nav-contact-links {
+  font-size: .9em;
+
+  @media only screen and (max-width: $breakpoint-show-nav-less-one) {
+    @include hide();
+  }
+
+  @media only screen and (min-width: $breakpoint-show-nav) {
+    display: inline-block;
+  }
+}
+
+.nav-menu-icon {
+  font-size: 23px;
+  opacity: 0.9;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+
+  @media only screen and (min-width: $breakpoint-show-nav) {
+    @include hide();
+  }
+
+  &.not-top {
+    color: $grey-medium;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav-name {
+  color: black;
+  font-weight: 500;
+}

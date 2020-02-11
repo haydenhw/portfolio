@@ -1,0 +1,155 @@
+.about-section {
+  background-color: $grey-super-light;
+  height: 547px;
+  border: none;
+  max-width: none;
+  text-align: center;
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
+    margin-top: 2%;
+    padding-left: 0;
+  }
+
+  @media only screen and (min-width: 650px) {
+    margin-top: 13%;
+    padding-left: 0;
+  }
+}
+
+.about-image {
+  width: 225px;
+
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
+    @include hide();
+  }
+}
+
+.about-image-container {
+  @include hide();
+  max-width: 560px;
+
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
+    @include unhide();
+    background-image: url(/images/rock-hand.png);
+    background-repeat: no-repeat;
+    //background-size: 124%;
+    background-size: cover !important;
+    height: 100% !important;
+  }
+
+  @media only screen and (min-width: 500px) {
+    background-size: 110%;
+  }
+
+  @media only screen and (min-width: 540px) {
+    height: 68%;
+    background-size: 100%;
+  }
+
+  @media only screen and (min-width: 580px) {
+    height: 65%;
+    background-size: 100%;
+  }
+
+  @media only screen and (min-width: 580px) {
+    height: 65%;
+  }
+
+  @media only screen and (min-width: 610px) {
+    height: 69%;
+  }
+
+  @media only screen and (min-width: $breakpoint-swap-about-divider) {
+    height: 100%;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    background-position: 0 30%;
+    height: 85%;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    background-color: 'red';
+    background-position: 0 30%;
+    height: 85%;
+  }
+}
+
+.about-heading {
+  font-size: 1.85em;
+
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
+    font-size: 2.6em;
+  }
+}
+
+.about-bio, .about-contact-wrapper {
+  max-width: 100%;
+  text-align: left;
+  padding-top: 10%;
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.about-bio {
+  color: #6b6a6a;
+
+  @media only screen and (min-width: 480px) {
+    width: 210px;
+  }
+
+  // j2
+  @media only screen and (min-width: 580px) {
+    width: 240px;
+  }
+
+  @media only screen and (min-width: 700px) {
+    width: 90%;
+  }
+
+  @media only screen and (min-width: 1100px) {
+    max-width: 90%;
+  }
+
+  @media only screen and (min-width: 1300px) {
+    max-width: 85%;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    max-width: 80%;
+  }
+}
+
+.about-text {
+  padding: 5% 8%;
+  padding-top: 0;
+
+  @media only screen and (min-width: 480px) {
+    padding-right: 0;
+  }
+}
+
+.about-contact-message {
+  color: $grey-super-dark;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.3em;
+
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
+    margin-right: 5px;
+  }
+}
+
+.about-email-link {
+  display: block;
+  margin-bottom: 22px;
+  color: $grey-super-dark;
+
+  &:hover {
+    color: $grey-dark;
+    transition: color .2s ease-in;
+  }
+}
+
+.about-contact-link {
+  @extend %contact-link;
+}

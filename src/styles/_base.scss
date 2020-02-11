@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $black-faded;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 0;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: inherit;
+}
+
+button {
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1em 2em;
+  z-index: 1;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+form {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 1.7em;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0.3em 0;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+main {
+  font-size: 1em;
+
+    @media only screen and (min-width: 700px) {
+      font-size: 1.1em;
+    }
+}
+
+p {
+  line-height: 1.75;
+}
+
+@include placeholder() {
+  font-family: $font-secondary;
+  font-size: 14px;
+  font-weight: 300;
+  vertical-align: top;
+
+  @include respond-to(handhelds) {
+    font-size: 16px;
+  }
+}

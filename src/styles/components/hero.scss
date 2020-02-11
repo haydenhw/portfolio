@@ -1,0 +1,141 @@
+.hero-section {
+  @extend %top-container;
+  background-image: url('/images/lovers-leap-background.png');
+  background-position: 74% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-weight: 400;
+  padding-top: 70vh;
+}
+
+.hero-headings-wrapper {
+  font-size: 1.2em;
+  position: relative;
+  max-width: 525px;
+
+
+  @media only screen and (min-width: 700px) {
+    font-size: 1.4em;
+    max-width: 575px;
+  }
+
+  @media only screen and (min-width: 800px) {
+    font-size: 1.5em;
+    width: 80%;
+    max-width: 685px;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    font-size: 1.55em;
+    max-width: 725px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.6em;
+    max-width: 775px;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    background-position: 100% 0;
+  }
+
+
+}
+
+.hero-headshot {
+  bottom: -9999px;
+  left: -9999px;
+  position: absolute;
+  z-index: 100;
+  
+  @media only screen and (min-width: 480px) {
+    left: 0;
+    bottom: -10px;
+
+    $width: 170px;
+    width: $width;
+    height: $width;
+  }
+
+  @media only screen and (min-width: 550px) {
+    $width: 200px;
+    width: $width;
+    height: $width;
+  }
+
+  @media only screen and (min-width: 800px) {
+    $width: 225px;
+    width: $width;
+    height: $width;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    $width: 250px;
+    width: $width;
+    height: $width;
+    bottom: -15px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    $width: 275px;
+    width: $width;
+    height: $width;
+  }
+}
+
+
+.hero-heading-bar-wrapper {
+  @media only screen and (min-width: 480px) {
+    margin-left: 100px;
+  }
+}
+
+.hero-heading-bar {
+  background-color: white;
+  color: #212121;
+  opacity: 0.7;
+  padding-top: 10px;
+  padding-bottom: 0.2em;
+  padding-right: 1.2em;
+  width: 80%;
+  text-align: right;
+
+  @media only screen and (min-width: 480px) {
+    padding-right: 20px;
+    width: 85%;
+  }
+}
+
+.hero-subheading-bar {
+  background-color: black;
+  color: white;
+  font-size: .8em;
+  margin-top: 15px;
+  opacity: .7;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 14px;
+  padding-left: 1.3em;
+  width: 98%;
+  max-width: 325px;
+
+  //@media only screen and (min-width: 350px) {
+  //  width: 83%;
+  //}
+
+  @media only screen and (min-width: 480px) {
+    width: 96%;
+    padding-right: 1.2em;
+    max-width: none;
+    text-align: right;
+  }
+
+  @media only screen and (min-width: 700px) {
+    font-size: .75em;
+  }
+}
+
+.hero-subheading-location {
+  font-style: italic;
+}

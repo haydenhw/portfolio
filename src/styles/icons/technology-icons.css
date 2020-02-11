@@ -1,0 +1,493 @@
+@font-face {
+    font-family:"technology-icons";
+    src:url("./fonts/technology-icons.eot");
+    font-weight:normal;
+    font-style:normal;
+}@font-face {
+  font-family:"technology-icons";
+  src:url("./fonts/technology-icons.eot");
+  src:url("./fonts/technology-icons.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/technology-icons.woff") format("woff"),
+    url("./fonts/technology-icons.ttf") format("truetype"),
+    url("./fonts/technology-icons.svg?#technology-icons") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
+[class^="tech-icon-"]:before,
+[class*="tech-icon-"]:before {
+  font-family:"technology-icons";
+  display:inline-block;
+  vertical-align:middle;
+  line-height:1;
+  font-weight:normal;
+  font-style:normal;
+  speak:none;
+  text-decoration:inherit;
+  text-transform:none;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+
+/* Icons */
+.tech-icon-aftereffects:before {
+  content:"\f101";
+}
+
+.tech-icon-bridge:before {
+  content:"\f102";
+}
+
+.tech-icon-dreamweaver:before {
+  content:"\f103";
+}
+
+.tech-icon-fireworks:before {
+  content:"\f104";
+}
+
+.tech-icon-flash:before {
+  content:"\f105";
+}
+
+.tech-icon-illustrator:before {
+  content:"\f106";
+}
+
+.tech-icon-indesign:before {
+  content:"\f107";
+}
+
+.tech-icon-lightroom:before {
+  content:"\f108";
+}
+
+.tech-icon-photoshop:before {
+  content:"\f109";
+}
+
+.tech-icon-cockpit:before {
+  content:"\f10a";
+}
+
+.tech-icon-drupal:before {
+  content:"\f10b";
+}
+
+.tech-icon-joomla:before {
+  content:"\f10c";
+}
+
+.tech-icon-magento:before {
+  content:"\f10d";
+}
+
+.tech-icon-october:before {
+  content:"\f10e";
+}
+
+.tech-icon-wordpress:before {
+  content:"\f10f";
+}
+
+.tech-icon-visual-studio:before {
+  content:"\f110";
+}
+
+.tech-icon-bootstrap:before {
+  content:"\f111";
+}
+
+.tech-icon-emmet:before {
+  content:"\f112";
+}
+
+.tech-icon-less:before {
+  content:"\f113";
+}
+
+.tech-icon-postcss:before {
+  content:"\f114";
+}
+
+.tech-icon-sass:before {
+  content:"\f115";
+}
+
+.tech-icon-cassandra:before {
+  content:"\f116";
+}
+
+.tech-icon-database:before {
+  content:"\f117";
+}
+
+.tech-icon-hadoop:before {
+  content:"\f118";
+}
+
+.tech-icon-mariadb:before {
+  content:"\f119";
+}
+
+.tech-icon-mongodb:before {
+  content:"\f11a";
+}
+
+.tech-icon-mysql-alt:before {
+  content:"\f11b";
+}
+
+.tech-icon-mysql:before {
+  content:"\f11c";
+}
+
+.tech-icon-postgres:before {
+  content:"\f11d";
+}
+
+.tech-icon-sql:before {
+  content:"\f11e";
+}
+
+.tech-icon-sublime:before {
+  content:"\f11f";
+}
+
+.tech-icon-express:before {
+  content:"\f120";
+}
+
+.tech-icon-grails:before {
+  content:"\f121";
+}
+
+.tech-icon-grailsalt:before {
+  content:"\f122";
+}
+
+.tech-icon-laravel-alt:before {
+  content:"\f123";
+}
+
+.tech-icon-laravel:before {
+  content:"\f124";
+}
+
+.tech-icon-phonegap:before {
+  content:"\f125";
+}
+
+.tech-icon-platter:before {
+  content:"\f126";
+}
+
+.tech-icon-playframework:before {
+  content:"\f127";
+}
+
+.tech-icon-rails-alt:before {
+  content:"\f128";
+}
+
+.tech-icon-rails:before {
+  content:"\f129";
+}
+
+.tech-icon-jira-alt:before {
+  content:"\f12a";
+}
+
+.tech-icon-jira:before {
+  content:"\f12b";
+}
+
+.tech-icon-angular:before {
+  content:"\f12c";
+}
+
+.tech-icon-backbone:before {
+  content:"\f12d";
+}
+
+.tech-icon-d3:before {
+  content:"\f12e";
+}
+
+.tech-icon-ember:before {
+  content:"\f12f";
+}
+
+.tech-icon-jquery-alt:before {
+  content:"\f130";
+}
+
+.tech-icon-jquery:before {
+  content:"\f131";
+}
+
+.tech-icon-react:before {
+  content:"\f132";
+}
+
+.tech-icon-c:before {
+  content:"\f133";
+}
+
+.tech-icon-cplusplus:before {
+  content:"\f134";
+}
+
+.tech-icon-csharp:before {
+  content:"\f135";
+}
+
+.tech-icon-haskell:before {
+  content:"\f136";
+}
+
+.tech-icon-java:before {
+  content:"\f137";
+}
+
+.tech-icon-nodejs:before {
+  content:"\f138";
+}
+
+.tech-icon-objectivec:before {
+  content:"\f139";
+}
+
+.tech-icon-perl:before {
+  content:"\f13a";
+}
+
+.tech-icon-php-alt:before {
+  content:"\f13b";
+}
+
+.tech-icon-php:before {
+  content:"\f13c";
+}
+
+.tech-icon-python:before {
+  content:"\f13d";
+}
+
+.tech-icon-ruby:before {
+  content:"\f13e";
+}
+
+.tech-icon-scala:before {
+  content:"\f13f";
+}
+
+.tech-icon-debian:before {
+  content:"\f140";
+}
+
+.tech-icon-fedora:before {
+  content:"\f141";
+}
+
+.tech-icon-freebsd:before {
+  content:"\f142";
+}
+
+.tech-icon-gnome:before {
+  content:"\f143";
+}
+
+.tech-icon-java-duke:before {
+  content:"\f144";
+}
+
+.tech-icon-kde:before {
+  content:"\f145";
+}
+
+.tech-icon-linux-mint:before {
+  content:"\f146";
+}
+
+.tech-icon-netbsd:before {
+  content:"\f147";
+}
+
+.tech-icon-rasbaerrypi:before {
+  content:"\f148";
+}
+
+.tech-icon-redhat:before {
+  content:"\f149";
+}
+
+.tech-icon-solaris:before {
+  content:"\f14a";
+}
+
+.tech-icon-suse:before {
+  content:"\f14b";
+}
+
+.tech-icon-ubuntu:before {
+  content:"\f14c";
+}
+
+.tech-icon-autoit:before {
+  content:"\f14d";
+}
+
+.tech-icon-browsersync:before {
+  content:"\f14e";
+}
+
+.tech-icon-confluence:before {
+  content:"\f14f";
+}
+
+.tech-icon-dynamicweb:before {
+  content:"\f150";
+}
+
+.tech-icon-babel:before {
+  content:"\f151";
+}
+
+.tech-icon-webpack:before {
+  content:"\f152";
+}
+
+.tech-icon-osx:before {
+  content:"\f153";
+}
+
+.tech-icon-codeignitor:before {
+  content:"\f154";
+}
+
+.tech-icon-composer:before {
+  content:"\f155";
+}
+
+.tech-icon-zend:before {
+  content:"\f156";
+}
+
+.tech-icon-apache:before {
+  content:"\f157";
+}
+
+.tech-icon-jetty:before {
+  content:"\f158";
+}
+
+.tech-icon-memcached:before {
+  content:"\f159";
+}
+
+.tech-icon-nginx-alt:before {
+  content:"\f15a";
+}
+
+.tech-icon-nginx:before {
+  content:"\f15b";
+}
+
+.tech-icon-redis:before {
+  content:"\f15c";
+}
+
+.tech-icon-tomcat:before {
+  content:"\f15d";
+}
+
+.tech-icon-ec3:before {
+  content:"\f15e";
+}
+
+.tech-icon-github-circle-alt:before {
+  content:"\f15f";
+}
+
+.tech-icon-github-circle:before {
+  content:"\f160";
+}
+
+.tech-icon-github:before {
+  content:"\f161";
+}
+
+.tech-icon-google-code:before {
+  content:"\f162";
+}
+
+.tech-icon-heroku:before {
+  content:"\f163";
+}
+
+.tech-icon-shell-alt:before {
+  content:"\f164";
+}
+
+.tech-icon-shell:before {
+  content:"\f165";
+}
+
+.tech-icon-shellscript:before {
+  content:"\f166";
+}
+
+.tech-icon-opensource:before {
+  content:"\f167";
+}
+
+.tech-icon-bower:before {
+  content:"\f168";
+}
+
+.tech-icon-grunt:before {
+  content:"\f169";
+}
+
+.tech-icon-gulp:before {
+  content:"\f16a";
+}
+
+.tech-icon-selenium:before {
+  content:"\f16b";
+}
+
+.tech-icon-git-squared:before {
+  content:"\f16c";
+}
+
+.tech-icon-git:before {
+  content:"\f16d";
+}
+
+.tech-icon-svn:before {
+  content:"\f16e";
+}
+
+.tech-icon-css-alt:before {
+  content:"\f16f";
+}
+
+.tech-icon-css3-alt:before {
+  content:"\f170";
+}
+
+.tech-icon-css3:before {
+  content:"\f171";
+}
+
+.tech-icon-html5:before {
+  content:"\f172";
+}
+
+.tech-icon-js:before {
+  content:"\f173";
+}

@@ -12,11 +12,13 @@ class LandingPage extends Component {
     this.state = {
       areLinksHidden: true,
       scrollY: 0,
-      windowWidth: window.innerWidth,
+      windowWidth: 0 ,
     };
   }
 
   componentDidMount() {
+    this.setState({ windowWidth: window.innerWidth })
+    
     window.addEventListener('resize', () => (
       this.setState({ windowWidth: window.innerWidth })
     ));
@@ -47,14 +49,14 @@ class LandingPage extends Component {
           isTop={scrollY === 0}
        />
         <Hero />
-        {/*<Divider  alias="projects" name="projects" title="projects" />*/}
-        {/*<main>*/}
-        {/*  <Projects />*/}
+        <Divider  alias="projects" name="projects" title="projects" />
+        <main>
+          <Projects />
         {/*  <Divider alias="about-mobile" name="about" title="About me" topBottom />*/}
         {/*  <About />*/}
         {/*  <div className={'about-spacer-temp-delete'} style={{height: '150px', background: 'rgba(0,0,0,0)'}}/>*/}
         {/*  /!*<div className={'about-spacer-temp-delete'} style={{height: '150px', background: 'black'}}/>*!/*/}
-        {/*</main>*/}
+        </main>
       </Element>
     );
   }

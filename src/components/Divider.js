@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Divider({ alias, name, title, topBottom }) {
-  console.log(title);
   return (
     !topBottom === true
     ? <div   className={`divider divider-${alias}`} name={name}>

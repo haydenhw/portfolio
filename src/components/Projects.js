@@ -1,20 +1,50 @@
 import React from 'react';
+import { useStaticQuery, graphql } from "gatsby"
+
 import ProjectItemDescription from './ProjectItemDescription';
 import ProjectItemImage from './ProjectItemImage';
 
 export default function Projects() {
+  const projectMockups = useStaticQuery(
+    graphql`
+      query {
+        pcbflow: file(relativePath: { eq: "pcb-flow-mockup-original.png" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        },
+        pomtracker: file(relativePath: { eq: "pomtracker-mockup.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        },
+        anki: file(relativePath: { eq: "anki-assistant-mockup.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `,
+  );
   return (
     <section name="projects-section" className="project-section" >
       <div className="row project-row pcb-flow-row">
         <div className="project-item" >
           <ProjectItemImage
             alt="project demo item"
-            imgSrc="/images/pcb-flow-mockup-original.png"
-            demoUrl="http://pcb-flow.herokuapp.com/"
+            imgData={projectMockups.pcbflow.childImageSharp.fluid}
+            demoUrl="https://pcbflow.haydenhw.com"
           />
           <ProjectItemDescription
             alias="pcb-flow"
-            repoUrl="https://github.com/hayden7913/bread-pcb-tool"
+            demoUrl="https://pcbflow.haydenhw.com"
+            repoUrl="https://github.com/haydenhw/PCBflow"
             title="PCB Flow"
             techIcons={["react", "sass", "nodejs", "mongodb"]}
             description="A drag and drop tool for designing electronic devices. Tailored specifically to make electronics design accessible and approachable for non-engineers."
@@ -26,12 +56,13 @@ export default function Projects() {
           <ProjectItemImage
             alt="project demo item"
             className="pomtracker-mockup-sm-screen"
-            imgSrc="/images/pomtracker-mockup.png"
-            demoUrl="http://pomtracker.herokuapp.com/"
+            imgData={projectMockups.pomtracker.childImageSharp.fluid}
+            demoUrl="https://pomtracker.haydenhw.com/"
           />
           <ProjectItemDescription
             alias="pomtracker"
-            repoUrl="https://github.com/hayden7913/PomTracker-Capstone"
+            demoUrl="https://pomtracker.haydenhw.com/"
+            repoUrl="https://github.com/haydenhw/PomTracker"
             title="Pomtracker"
             techIcons={["react", "sass", "nodejs", "mongodb"]}
             description="A Pomodoro timer with integrated time tracking. I built this app with my own use in mind as I struggled to find existing tools for time tracking and the Pomodoro system that worked for me. I use this app every day to manage my Pomodoro sessions and keep my weekly productivity goals on track."
@@ -39,8 +70,8 @@ export default function Projects() {
           <ProjectItemImage
             alt="project demo item"
             className="pomtracker-mockup-lg-screen"
-            imgSrc="/images/pomtracker-mockup.png"
-            demoUrl="http://pomtracker.herokuapp.com/"
+            imgData={projectMockups.pomtracker.childImageSharp.fluid}
+            demoUrl="https://pomtracker.haydenhw.com/"
           />
         </div>
       </div>
@@ -48,11 +79,12 @@ export default function Projects() {
         <div className="project-item" >
           <ProjectItemImage
             alt="project demo item"
-            imgSrc="/images/anki-assistant-mockup.png"
-            demoUrl="http://anki-assistant.herokuapp.com/"
+            imgData={projectMockups.anki.childImageSharp.fluid}
+            demoUrl="http://anki.haydenhw.com/"
           />
           <ProjectItemDescription
             alias="anki-assistant"
+            demoUrl="http://anki.haydenhw.com/"
             repoUrl="https://github.com/hayden7913/AnkiAssistant"
             title="AnkiAssistant"
             techIcons={["jquery", "sass"]}

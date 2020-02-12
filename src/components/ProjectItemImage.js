@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react"
+import Img from "gatsby-image"
 
-export default function ProjectsItemImage({ alt, demoUrl, imgSrc, className }) {
+export default function ProjectsItemImage({ alt, demoUrl, imgData, className }) {
   return (
-    <div className={`col9 col-screenshot ${className || ''}`}>
+    <div className={`col9 col-screenshot ${className || ""}`}>
       <a href={demoUrl}>
-        <img className="project-screenshot" src={imgSrc} alt={alt}/>
+        <div className="project-screenshot">
+          {imgData && <Img fluid={imgData}/>}
+        </div>
       </a>
     </div>
-  );
+  )
 }

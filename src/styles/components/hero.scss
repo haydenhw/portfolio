@@ -1,10 +1,5 @@
 .hero-section {
   @extend %top-container;
-  background-image: url('/images/lovers-leap-background.png');
-  background-position: 74% 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
   font-weight: 400;
   padding-top: 70vh;
 }

@@ -1,18 +1,9 @@
 .col-description {
   padding: 0 20px;
 
-
   @media only screen and (min-width: $breakpoint-grid-layout) {
     padding-top: 30px;
   }
-
-  // padding-top: 60px;
-
-  // @media only screen and (min-width: 960px) {
-  //   padding-left: 50px;
-  //   padding-top: 0;
-  //   text-align: left;
-  // }
 }
 
 .col-about {

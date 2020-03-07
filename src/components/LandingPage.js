@@ -18,7 +18,7 @@ class LandingPage extends Component {
 
   componentDidMount() {
     this.setState({ windowWidth: window.innerWidth })
-    
+
     window.addEventListener('resize', () => (
       this.setState({ windowWidth: window.innerWidth })
     ));
@@ -38,7 +38,7 @@ class LandingPage extends Component {
 
   render() {
     const { areLinksHidden, scrollY } = this.state;
-    
+
     return (
       <Element name="home">
        <Nav
@@ -52,10 +52,10 @@ class LandingPage extends Component {
         <Divider  alias="projects" name="projects" title="projects" />
         <main>
           <Projects />
-        {/*  <Divider alias="about-mobile" name="about" title="About me" topBottom />*/}
-        {/*  <About />*/}
-        {/*  <div className={'about-spacer-temp-delete'} style={{height: '150px', background: 'rgba(0,0,0,0)'}}/>*/}
-        {/*  /!*<div className={'about-spacer-temp-delete'} style={{height: '150px', background: 'black'}}/>*!/*/}
+          <Element name="about">
+            <Divider alias="about-mobile" name="about" title="About me" topBottom />
+            <About />
+          </Element>
         </main>
       </Element>
     );

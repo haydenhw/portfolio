@@ -14,7 +14,7 @@ export default function ContactLinks({ alias, isTop }) {
 
   return (
     <div className={`contact-links ${alias}-contact-links`}>
-      <a className={githubLinkClass} href="https://github.com/hayden7913"></a>
+      <a className={githubLinkClass} href="https://github.com/haydenhw"></a>
       <a
         className={linkedInLinkClass}
         href="https://www.linkedin.com/in/hayden-harkwright-2588b254"

@@ -8,10 +8,9 @@ function Hero({ className }) {
   const images = useStaticQuery(
     graphql`
       query {
-        background: file(relativePath: { eq: "lovers-leap-background.png" }) {
+        background: file(relativePath: { eq: "lovers-leap-original-min.jpg" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920, traceSVG: {
-            }) {
+            fluid(quality: 90, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -33,10 +32,15 @@ function Hero({ className }) {
       className={`${className} hero-section`}
       loading="eager"
       fluid={images.background.childImageSharp.fluid}
+      style={{ backgroundPositionY: "0" }}
     >
       <div className="hero-headings-wrapper">
         <div className="hero-headshot">
-          <Img fluid={images.headshot.childImageSharp.fluid}/>
+          <Img
+            placeholderStyle={{ filter: "blur(20px)" }}
+            style={{ borderRadius: "100%" }}
+            fluid={images.headshot.childImageSharp.fluid}
+          />
         </div>
         <div className="hero-heading-bar-wrapper">
           <div className="hero-heading-bar">
@@ -52,7 +56,6 @@ function Hero({ className }) {
   )
 }
 
-// background-position: 74% 0;
 const StyledHero = styled(Hero)`
   background-repeat: no-repeat;
   background-size: cover;

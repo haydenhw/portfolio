@@ -1,22 +1,50 @@
-import React from 'react';
-import Divider from './Divider';
+import React from "react"
+import Divider from "./Divider"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
 
 export default function About() {
+  const images = useStaticQuery(
+    graphql`
+      query {
+        rockHand: file(relativePath: { eq: "rock-hand.png" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 225) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        },
+        headshot: file(relativePath: { eq: "headshot-with-shadow.png" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 225) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `,
+  );
+
   return (
     <section name="about" className="row about-section">
       <div className="col6 col-about col-about-left">
-        <img className="about-image" src="/images/headshot-with-shadow.png" alt="headshot"/>
-        <div className="about-image-container"/>
+        <div className="about-image">
+          <Img fluid={images.headshot.childImageSharp.fluid}/>
+        </div>
+        <div className="about-image-container">
+          <BackgroundImage
+            Tag="div"
+            className={"about-rockhand-image"}
+            fluid={images.rockHand.childImageSharp.fluid}
+          />
+        </div>
       </div>
       <div className="col6 col-about col-about-right">
-        <Divider alias="about" name="about" title="About me" topBottom/>
+        <Divider alias="about" name="about" title="about me" topBottom/>
         <div className="about-text">
           <p className="about-bio">
-            I take great joy in finding ways to use programming to make life less tedious and more fun.
-            I also earnestly look forward to putting web software to use to make meaningful improvements in the quality
-            of other's lives and ending suffering in the world.
-            Aside from my true obsession with coding, I'm also into rock climbing, meditation, and dark, roasty
-            microbrews.
+            I'm a technically oriented fullstack/fronted developer with a passion for building rich and deeply interactive web applications. I particularly enjoy working with application state libraries like Redux. My ultimate career goal is to work on software that helps bring the world to 100% renewable energy. When I manage to peel myself away from my latest software projects I'm usually rock climbing or hiking in the redwoods.
           </p>
           {/*<div className="about-contact-wrapper">*/}
           {/*  <span className="about-contact-message">*/}
@@ -38,5 +66,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -1,10 +1,11 @@
 .about-section {
   background-color: $grey-super-light;
-  height: 547px;
   border: none;
   max-width: none;
   text-align: center;
+
   @media only screen and (min-width: $breakpoint-swap-about-image) {
+    height: 547px;
     margin-top: 2%;
     padding-left: 0;
   }
@@ -17,6 +18,7 @@
 
 .about-image {
   width: 225px;
+  margin-top: 5%;
 
   @media only screen and (min-width: $breakpoint-swap-about-image) {
     @include hide();
@@ -25,53 +27,54 @@
 
 .about-image-container {
   @include hide();
+  position: relative;
   max-width: 560px;
 
   @media only screen and (min-width: $breakpoint-swap-about-image) {
     @include unhide();
-    background-image: url(/images/rock-hand.png);
     background-repeat: no-repeat;
-    //background-size: 124%;
-    background-size: cover !important;
-    height: 100% !important;
+    height: 100%;
   }
-
+  // TODO eliminate unneeded media queries
   @media only screen and (min-width: 500px) {
     background-size: 110%;
   }
 
   @media only screen and (min-width: 540px) {
-    height: 68%;
+    //height: 68%;
     background-size: 100%;
   }
 
   @media only screen and (min-width: 580px) {
-    height: 65%;
+    //height: 65%;
     background-size: 100%;
   }
 
   @media only screen and (min-width: 580px) {
-    height: 65%;
+    //height: 65%;
   }
 
   @media only screen and (min-width: 610px) {
-    height: 69%;
+    //height: 69%;
   }
 
   @media only screen and (min-width: $breakpoint-swap-about-divider) {
-    height: 100%;
+    //height: 100%;
   }
 
   @media only screen and (min-width: 1200px) {
     background-position: 0 30%;
-    height: 85%;
+    //height: 85%;
   }
 
   @media only screen and (min-width: 1400px) {
-    background-color: 'red';
     background-position: 0 30%;
-    height: 85%;
+    //height: 85%;
   }
+}
+
+.about-rockhand-image {
+  height: 100%;
 }
 
 .about-heading {
@@ -97,7 +100,6 @@
     width: 210px;
   }
 
-  // j2
   @media only screen and (min-width: 580px) {
     width: 240px;
   }

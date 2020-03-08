@@ -3,6 +3,7 @@ import Divider from "./Divider"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
+import headshot from "../images/headshot-with-shadow.png";
 
 export default function About() {
   const images = useStaticQuery(
@@ -29,9 +30,7 @@ export default function About() {
   return (
     <section name="about" className="row about-section">
       <div className="col6 col-about col-about-left">
-        <div className="about-image">
-          <Img fluid={images.headshot.childImageSharp.fluid}/>
-        </div>
+        <img className="about-image" src={headshot} alt="headshot"/>
         <div className="about-image-container">
           <BackgroundImage
             Tag="div"

@@ -7,9 +7,9 @@
 }
 
 .col-about {
-  height: 100%;
   @media only screen and (min-width: $breakpoint-swap-about-image) {
     border: none;
+    height: 100%;
     width: 50%;
   }
 }
@@ -28,9 +28,8 @@
 }
 
 .col-about-right {
-  padding-top: 5%;
-
   @media only screen and (min-width: 900px) {
+    padding-top: 5%;
     width: 60%;
   }
 }

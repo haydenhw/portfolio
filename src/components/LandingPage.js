@@ -53,7 +53,7 @@ class LandingPage extends Component {
         <main>
           <Projects />
           <Element name="about">
-            <Divider alias="about-mobile" name="about" title="About me" topBottom />
+            <Divider alias="about-mobile" name="about" title="about me" topBottom />
             <About />
           </Element>
         </main>

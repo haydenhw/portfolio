@@ -88,8 +88,9 @@ $divider-about-color: $grey-medium;
 }
 
 .divider-about-mobile {
-  margin-top: 13%;
+  margin-top: 20%;
   text-align: right;
+
   @media only screen and (min-width: $breakpoint-swap-about-divider) {
     @include hide();
   }
@@ -97,6 +98,7 @@ $divider-about-color: $grey-medium;
 
 .divider-title-about-mobile {
   margin-right: 15px;
+  line-height: 0.4;
 }
 
 .divider-line-about-mobile {

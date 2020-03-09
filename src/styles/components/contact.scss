@@ -1,13 +1,27 @@
-.contact {
-  position: relative;
-  text-align: left;
-  line-height: 2;
+.contact-section {
+  padding: 1em;
+  background-color: black;
+  color: $grey-lighten-2;
+  font-size: 1em;
+}
+.contact-heading {
+  margin: 0;
+  margin-bottom: .5em;
 }
 
-.contact-footer {
-  bottom: 0;
-  left: 50%;
-  margin-bottom: 20px;
-  position: absolute;
-  transform: translateX(-50%);
+.contact-text-links {
+  font-size: 1.3em;
 }
+
+.contact-links {
+  .footer-contact-links {
+    margin: 1em 0;
+    font-size: 1.3em;
+  }
+}
+
+.footer-contact-link {
+  margin-right: 0.6em;
+}
+
+

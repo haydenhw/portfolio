@@ -5,6 +5,7 @@ import Divider from './Divider';
 import Hero from './Hero';
 import Nav from './Nav';
 import Projects from './Projects';
+import Contact from './Contact';
 
 class LandingPage extends Component {
   constructor() {
@@ -31,8 +32,8 @@ class LandingPage extends Component {
   toggleNavLinks = () => {
     const { areLinksHidden } = this.state;
 
-    setTimeout(() =>{
-      this.setState({ areLinksHidden: !areLinksHidden});
+    setTimeout(() => {
+      this.setState({ areLinksHidden: !areLinksHidden });
     }, 0);
   }
 
@@ -57,6 +58,7 @@ class LandingPage extends Component {
             <About />
           </Element>
         </main>
+        <Contact />
       </Element>
     );
   }

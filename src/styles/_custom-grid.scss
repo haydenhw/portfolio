@@ -15,7 +15,6 @@
 }
 
 .col-about-left {
-  border: 1px solid black;
   text-align: center;
 
   @media only screen and (min-width: $breakpoint-swap-about-image) {
@@ -29,8 +28,6 @@
 }
 
 .col-about-right {
-  border: 1px solid black;
-
   @media only screen and (min-width: 900px) {
     padding-top: 5%;
     width: 60%;
@@ -38,7 +35,6 @@
 }
 
 .col-contact-left {
-  border: 1px solid white;
   @include hide();
 
   @media only screen and (min-width: $breakpoint-show-contact-logo) {
@@ -46,19 +42,18 @@
     width: 48%;
   }
 
-  @media only screen and (min-width: $breakpoint-swap-about-image) {
+  @media only screen and (min-width: 900px) {
     @include unhide();
     width: 39.5%;
   }
 }
 
 .col-contact-right {
-  border: 1px solid white;
   @media only screen and (min-width: $breakpoint-show-contact-logo) {
     width: 52%;
   }
 
-  @media only screen and (min-width: $breakpoint-swap-about-image) {
+  @media only screen and (min-width: 900px) {
     width: 60.5%;
   }
 }

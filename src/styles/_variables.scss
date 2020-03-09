@@ -41,14 +41,22 @@ $break-mobile: 480px;
 $break-tablet: 768px;
 $break-medium: 960px;
 $break-wide: 1024px;
-$breakpoint-show-nav-value: 700;
+
 $breakpoint-grid-layout-value: 1200;
-$breakpoint-swap-about-divider-value: 650;
-$breakpoint-swap-about-image-value: 480;
+$breakpoint-grid-layout: $breakpoint-grid-layout-value * 1px;
+
+$breakpoint-show-contact-logo-value: 600;
+$breakpoint-show-contact-logo: $breakpoint-show-contact-logo-value * 1px;
+$breakpoint-show-contact-logo-less-one: $breakpoint-show-contact-logo-value - 1 * 1px;
+
+$breakpoint-show-nav-value: 700;
 $breakpoint-show-nav: $breakpoint-show-nav-value * 1px;
 $breakpoint-show-nav-less-one: $breakpoint-show-nav-value - 1 * 1px;
+
+$breakpoint-swap-about-image-value: 480;
 $breakpoint-swap-about-image: $breakpoint-swap-about-image-value * 1px;
 $breakpoint-swap-about-image-less-one: $breakpoint-swap-about-image-value - 1 * 1px;
+
+$breakpoint-swap-about-divider-value: 650;
 $breakpoint-swap-about-divider: $breakpoint-swap-about-divider-value * 1px;
 $breakpoint-swap-about-divider-less-one: $breakpoint-swap-about-divider-value - 1 * 1px;
-$breakpoint-grid-layout: $breakpoint-grid-layout-value * 1px;

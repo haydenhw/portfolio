@@ -1,10 +1,14 @@
 import React from "react"
 import ContactLinks from "./ContactLinks";
+import logoWhite from "../images/logo-white.svg";
 
 export default function Contact() {
   return (
     <section className="contact-section row">
-      <div className="contact-info">
+      <div className="contact-logo contact-col col-contact-left col6">
+        <img className="contact-logo-image" src={logoWhite} alt="logo"/>
+      </div>
+      <div className="contact-info contact-col col-contact-right col6">
         <h3 className="contact-heading">contact</h3>
         <div className="contact-links">
           <div className="contact-text-links">
@@ -17,32 +21,10 @@ export default function Contact() {
               <span className="contact-text-link-value">Oakland, CA</span>
             </div>
           </div>
-            <ContactLinks alias="footer" />
+            <ContactLinks alias="footer" hideEmail/>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-function oldContact() {
-  return (
-    <div className="contact-wrapper">
-      <div className="contact">
-        <span className="contact-message">Reach out at </span>
-        <a className="contact-link link" href="mailto:hayden321@gmail.com">hayden321@gmail.com</a>
-        <div>or</div>
-        <div className="contact-links">
-          <a
-            className="contact-link icon-linkedin"
-            href="https://www.linkedin.com/in/hayden-harkwright-2588b254"
-          >
-          </a>
-          <a className="contact-link icon-github" href="https://github.com/hayden7913"></a>
-        </div>
-      </div>
-      <div className="contact-footer">
-        <span>Oakland, CA</span>
-      </div>
-    </div>
-  )
-}

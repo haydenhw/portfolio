@@ -1,3 +1,9 @@
+// TODO deprecate this file. Move styles to relevant components
+
+.col-screenshot {
+  text-align: center;
+}
+
 .col-description {
   padding: 0 20px;
 
@@ -34,37 +40,6 @@
   }
 }
 
-.col-contact-left {
-  @include hide();
-
-  @media only screen and (min-width: $breakpoint-show-contact-logo) {
-    @include unhide();
-    width: 48%;
-  }
-
-  @media only screen and (min-width: 900px) {
-    @include unhide();
-    width: 39.5%;
-  }
-}
-
-.col-contact-right {
-  @media only screen and (min-width: $breakpoint-show-contact-logo) {
-    width: 52%;
-  }
-
-  @media only screen and (min-width: 900px) {
-    width: 60.5%;
-  }
-}
-
-.contact-col {
-  padding: 8% 4%;
-}
-
-.col-screenshot {
-  text-align: center;
-}
 
 $row-spacing-sm-screen: 75;
 $row-spacing-med-screen: 110;

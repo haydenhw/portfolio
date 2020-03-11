@@ -14,7 +14,9 @@ export default function Contact() {
           <div className="contact-text-links">
             <div className="contact-text-link">
               <span className="contact-text-link-label">email:</span>
-              <span className="contact-text-link-value">hayden321@gmail.com</span>
+              <a href="mailto:hayden321@gmail.com" className="contact-text-link-value contact-email-link">
+                hayden321@gmail.com
+              </a>
             </div>
             <div className="contact-text-link">
               <span className="contact-text-link-label">location:</span>

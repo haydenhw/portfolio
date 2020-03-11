@@ -1,11 +1,45 @@
+$breakpoint-show-contact-logo-value: 600;
+$breakpoint-show-contact-logo: $breakpoint-show-contact-logo-value * 1px;
+$breakpoint-show-contact-logo-less-one: $breakpoint-show-contact-logo-value - 1 * 1px;
+
+
+.col-contact-left {
+  @include hide();
+
+  @media only screen and (min-width: $breakpoint-show-contact-logo) {
+    @include unhide();
+    width: 48%;
+  }
+
+  @media only screen and (min-width: 900px) {
+    @include unhide();
+    width: 39.5%;
+  }
+}
+
+.col-contact-right {
+  @media only screen and (min-width: $breakpoint-show-contact-logo) {
+    width: 52%;
+  }
+
+  @media only screen and (min-width: 900px) {
+    width: 60.5%;
+  }
+}
+
+.contact-col {
+  padding: 8% 11%;
+
+  @media only screen and (min-width: $breakpoint-show-contact-logo) {
+    padding: 8% 4%;
+  }
+}
+
 .contact-section {
   background-color: black;
   color: $grey-lighten-2;
   font-size: 1em;
   padding: 0;
-}
-
-.contact-info {
 }
 
 .contact-logo-image {
@@ -16,18 +50,31 @@
 
 .contact-heading {
   margin: 0;
-  margin-bottom: 0.5em;
 }
 
 .contact-text-links {
-  font-size: 1.3em;
+  font-size: 1.1em;
+  margin: 1.3em 0;
 }
+
 .contact-text-link {
-  margin-bottom: 0.2em;
+  margin-bottom: 0.6rem;
 }
+
+.contact-email-link {
+  text-decoration: underline;
+}
+
+.contact-text-link-value {
+}
+
+.contact-text-link-label {
+  margin-right: 0.5em;
+  font-size:.9em;
+}
+
 .contact-links {
   .footer-contact-links {
-    margin: 1em 0;
     font-size: 1.5em;
   }
 }

@@ -35,7 +35,7 @@ function Hero({ className }) {
       style={{ backgroundPositionY: "0" }}
     >
       <div className="hero-headings-wrapper">
-        <div className="hero-headshot">
+        <div id="headshot" className="hero-headshot">
           <Img
             placeholderStyle={{ filter: "blur(20px)" }}
             style={{ borderRadius: "100%" }}

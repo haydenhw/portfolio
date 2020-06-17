@@ -11,7 +11,7 @@ $cubic: cubic-bezier(.64,.09,.08,1);
     padding: 6px 10px;
     top: 1.4em;
     left: 50%;
-    transform: translateX(-50%) translateY(-2px);
+    transform: translateX(-50%) translateY(-170%);
     background: grey;
     color: white;
     white-space: nowrap;
@@ -24,7 +24,7 @@ $cubic: cubic-bezier(.64,.09,.08,1);
       display: block;
       opacity: 1;
       visibility: visible;
-      transform: translateX(-50%) translateY(0);
+      transform: translateX(-50%) translateY(-183%);
     }
   }
 }

@@ -44,9 +44,10 @@ export default function Projects() {
           <ProjectItemDescription
             alias="pcb-flow"
             demoUrl="https://pcbflow.haydenhw.com"
-            repoUrl="https://github.com/haydenhw/PCBflow"
+            clientUrl="https://github.com/haydenhw/pcbflow-client"
+            serverUrl="https://github.com/haydenhw/pcbflow-server"
             title="PCB Flow"
-            techIcons={["react", "sass", "nodejs", "mongodb"]}
+            techIcons={["react", "sass", "nodejs", "postgres"]}
             description="A drag and drop tool for designing electronic devices. Tailored specifically to make electronics design accessible and approachable for non-engineers."
           />
         </div>
@@ -62,9 +63,10 @@ export default function Projects() {
           <ProjectItemDescription
             alias="pomtracker"
             demoUrl="https://pomtracker.haydenhw.com/"
-            repoUrl="https://github.com/haydenhw/PomTracker"
+            clientUrl="https://github.com/haydenhw/pomtracker-client"
+            serverUrl="https://github.com/haydenhw/pomtracker-server"
             title="Pomtracker"
-            techIcons={["react", "sass", "nodejs", "mongodb"]}
+            techIcons={["react", "sass", "nodejs", "postgres"]}
             description="A Pomodoro timer with integrated time tracking. I built this app with my own use in mind as I struggled to find existing tools for time tracking and the Pomodoro system that worked for me. I use this app every day to manage my Pomodoro sessions and keep my weekly productivity goals on track."
           />
           <ProjectItemImage

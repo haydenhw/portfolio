@@ -18,7 +18,8 @@ export default function ProjectsItemDescription({
   demoUrl,
   description,
   alias,
-  repoUrl,
+  clientUrl,
+  serverUrl,
   techIcons,
   title,
 }) {
@@ -33,9 +34,11 @@ export default function ProjectsItemDescription({
         <div className="project-tech-icons">
           {renderTechIcons(techIcons)}
         </div>
-        <a className="project-link" href={repoUrl}>Repo</a>
+        <a className="project-link" href={demoUrl}>Live</a>
         <span className={`theme-color-${alias}`}> | </span>
-        <a className="project-link" href={demoUrl}>Demo</a>
+        <a className="project-link" href={clientUrl}>Client</a>
+        { serverUrl && <span className={`theme-color-${alias}`}> | </span> }
+        { serverUrl && <a className="project-link" href={serverUrl}>Server</a> }
       </div>
     </div>
   );

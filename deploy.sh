@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-distributionId=E34P8R1QKSYYHP
+bucket_name=haydenhw.com
 
-yarn bd &&
-aws2 cloudfront create-invalidation \
-    --distribution-id $distributionId \
-    --paths "/*"
+npm run build
+aws2 s3 sync build s3://$bucket_name 
+
 

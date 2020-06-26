@@ -1,12 +1,11 @@
 import React from "react"
 import ContactLinks from "./ContactLinks";
-import logoWhite from "../images/logo-white.svg";
 
 export default function Contact() {
   return (
     <section className="contact-section row">
       <div className="contact-logo contact-col col-contact-left col6">
-        <img className="contact-logo-image" src={logoWhite} alt="logo"/>
+        <img className="contact-logo-image" src="images/logo-white.svg" alt="logo"/>
       </div>
       <div className="contact-info contact-col col-contact-right col6">
         <h3 className="contact-heading">contact</h3>

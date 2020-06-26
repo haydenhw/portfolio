@@ -1,5 +1,10 @@
 .hero-section {
   @extend %top-container;
+  background-image: url('/images/lovers-leap-background.png');
+  background-position: 74% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
   font-weight: 400;
   padding-top: 70vh;
 }
@@ -46,36 +51,26 @@
 
   @media only screen and (min-width: 480px) {
     left: 0;
-    bottom: -10px;
-
-    $width: 170px;
-    width: $width;
-    height: $width;
+    bottom: -3;
+    width: 170px;
   }
 
   @media only screen and (min-width: 550px) {
-    $width: 200px;
-    width: $width;
-    height: $width;
+    width: 200px;
   }
 
   @media only screen and (min-width: 800px) {
-    $width: 225px;
-    width: $width;
-    height: $width;
+    width: 225px;
   }
 
   @media only screen and (min-width: 1000px) {
-    $width: 250px;
-    width: $width;
-    height: $width;
-    bottom: -15px;
+    width: 250px;
+    bottom: -10;
   }
 
   @media only screen and (min-width: 1200px) {
-    $width: 275px;
-    width: $width;
-    height: $width;
+    width: 275px;
+    bottom: -10;
   }
 }
 

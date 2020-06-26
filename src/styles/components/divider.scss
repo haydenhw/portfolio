@@ -1,5 +1,5 @@
 .divider {
-  color: $grey-lighten-1;
+  color: $grey-medium;
   display: flex;
   font-size: 3em;
   font-weight: 300;
@@ -25,24 +25,25 @@
   }
 
   @media only screen and (min-width: 1400px) {
-    font-size: 5.3em;
+    font-size: 5.8em;
   }
 }
 
 .divider-line {
   display: inline-block;
-  border-bottom: 4px solid $grey-lighten-2;
+  border-bottom: 4px solid $grey-light;
   width: 100%;
   margin-bottom: 15px;
 
   @media only screen and (min-width: 600px) {
-    border-bottom-width: 6px;
+    border-bottom: 6px solid $grey-light;
   }
 }
 
 .divider-title {
-  font-family: $font-primary;
-  font-weight: 300;
+  //font-family: 'LatoLatin';
+  font-family: 'Lato';
+  font-weight: 100;
   font-style: normal;
   padding-left: 20px;
 }
@@ -61,6 +62,10 @@
   }
 }
 
+.divider-title-projects {
+  font-size: 1em;
+}
+
 $divider-about-color: $grey-medium;
 
 .divider-about {
@@ -73,7 +78,9 @@ $divider-about-color: $grey-medium;
 
 .divider-title-about {
   color: $divider-about-color;
-  line-height: 0;
+  font-size: 1.4em;
+  line-height: .7;
+  padding-bottom: 21px;
   padding-right: 8%;
 }
 
@@ -88,9 +95,8 @@ $divider-about-color: $grey-medium;
 }
 
 .divider-about-mobile {
-  margin-top: 20%;
+  margin-top: 13%;
   text-align: right;
-
   @media only screen and (min-width: $breakpoint-swap-about-divider) {
     @include hide();
   }
@@ -98,7 +104,6 @@ $divider-about-color: $grey-medium;
 
 .divider-title-about-mobile {
   margin-right: 15px;
-  line-height: 0.4;
 }
 
 .divider-line-about-mobile {

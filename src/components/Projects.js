@@ -1,44 +1,16 @@
 import React from 'react';
-import { useStaticQuery, graphql } from "gatsby"
 
 import ProjectItemDescription from './ProjectItemDescription';
 import ProjectItemImage from './ProjectItemImage';
 
 export default function Projects() {
-  const projectMockups = useStaticQuery(
-    graphql`
-      query {
-        pcbflow: file(relativePath: { eq: "pcb-flow-mockup-original.png" }) {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
-            }
-          }
-        },
-        pomtracker: file(relativePath: { eq: "pomtracker-mockup.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
-            }
-          }
-        },
-        anki: file(relativePath: { eq: "anki-assistant-mockup.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
-            }
-          }
-        }
-      }
-    `,
-  );
   return (
     <section name="projects-section" className="project-section" >
       <div className="row project-row pcb-flow-row">
         <div className="project-item" >
           <ProjectItemImage
             alt="project demo item"
-            imgData={projectMockups.pcbflow.childImageSharp.fluid}
+            imgSrc="images/pcb-flow-mockup.png"
             demoUrl="https://pcbflow.haydenhw.com"
           />
           <ProjectItemDescription
@@ -57,7 +29,7 @@ export default function Projects() {
           <ProjectItemImage
             alt="project demo item"
             className="pomtracker-mockup-sm-screen"
-            imgData={projectMockups.pomtracker.childImageSharp.fluid}
+            imgSrc="images/pomtracker-mockup.png"
             demoUrl="https://pomtracker.haydenhw.com/"
           />
           <ProjectItemDescription
@@ -72,7 +44,7 @@ export default function Projects() {
           <ProjectItemImage
             alt="project demo item"
             className="pomtracker-mockup-lg-screen"
-            imgData={projectMockups.pomtracker.childImageSharp.fluid}
+            imgSrc="images/pomtracker-mockup.png"
             demoUrl="https://pomtracker.haydenhw.com/"
           />
         </div>
@@ -81,7 +53,7 @@ export default function Projects() {
         <div className="project-item" >
           <ProjectItemImage
             alt="project demo item"
-            imgData={projectMockups.anki.childImageSharp.fluid}
+            imgSrc="images/anki-assistant-mockup.png"
             demoUrl="http://anki.haydenhw.com/"
           />
           <ProjectItemDescription

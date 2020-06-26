@@ -1,42 +1,13 @@
 import React from "react"
 import Divider from "./Divider"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import BackgroundImage from "gatsby-background-image"
-import headshot from "../images/headshot-with-shadow.png";
 
 export default function About() {
-  const images = useStaticQuery(
-    graphql`
-      query {
-        rockHand: file(relativePath: { eq: "rock-hand.png" }) {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 225) {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
-            }
-          }
-        },
-        headshot: file(relativePath: { eq: "headshot-with-shadow.png" }) {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 225) {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
-            }
-          }
-        }
-      }
-    `,
-  );
-
   return (
     <section name="about" className="row about-section">
       <div className="col6 col-about col-about-left">
-        <img className="about-image" src={headshot} alt="headshot"/>
+        <img className="about-image" src="images/headshot-with-shadow.png" alt="headshot"/>
         <div className="about-image-container">
-          <BackgroundImage
-            Tag="div"
-            className={"about-rockhand-image"}
-            fluid={images.rockHand.childImageSharp.fluid}
-          />
+          <img src="images/rock-hand.png" alt=""/>
         </div>
       </div>
       <div className="col6 col-about col-about-right">

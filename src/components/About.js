@@ -12,14 +12,14 @@ export default function About() {
         rockHand: file(relativePath: { eq: "rock-hand.png" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 225) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         },
         headshot: file(relativePath: { eq: "headshot-with-shadow.png" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 225) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

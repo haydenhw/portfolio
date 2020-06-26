@@ -14,14 +14,14 @@ export default function ContactLinks({ alias, isTop, hideEmail }) {
 
   return (
     <div className={`contact-links ${alias}-contact-links`}>
-      <a className={githubLinkClass} href="https://github.com/haydenhw"></a>
+      <a className={githubLinkClass} href="https://github.com/haydenhw" target="_blank"></a>
       <a
         className={linkedInLinkClass}
         href="https://www.linkedin.com/in/hayden-harkwright-2588b254"
       >
       </a>
       {!hideEmail &&
-        <a className={mailLinkClass} href="mailto:hayden321@gmail.com"></a>
+        <a className={mailLinkClass} href="mailto:hayden321@gmail.com" target="_blank"></a>
       }
     </div>
   );

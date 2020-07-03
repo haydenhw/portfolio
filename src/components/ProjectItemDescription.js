@@ -36,8 +36,8 @@ export default function ProjectsItemDescription({
         <a className="project-link" href={demoUrl} target="_blank">Live</a>
         <span className={`theme-color-${alias}`}> | </span>
         <a className="project-link" href={clientUrl} target="_blank">Client</a>
-        { serverUrl && <span className={`theme-color-${alias}`}> | </span> }
-        { serverUrl && <a className="project-link" href={serverUrl} target="_blank">Server</a> }
+        {serverUrl && <span className={`theme-color-${alias}`}> | </span>}
+        {serverUrl && <a className="project-link" href={serverUrl} target="_blank">Server</a>}
       </div>
     </div>
   );

@@ -65,7 +65,7 @@ export default function Nav({
         </div>
         <div className="nav-right">
           <ContactLinks alias="nav" isTop={isTop} />
-          <span className={menuIconClass} onClick={onMenuClick}/>
+          <span className={menuIconClass} onClick={onMenuClick}></span>
         </div>
       </div>
     </nav>

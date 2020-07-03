@@ -1,5 +1,4 @@
 import React from 'react';
-
 import ProjectItemDescription from './ProjectItemDescription';
 import ProjectItemImage from './ProjectItemImage';
 
@@ -10,7 +9,7 @@ export default function Projects() {
         <div className="project-item" >
           <ProjectItemImage
             alt="project demo item"
-            imgSrc="images/pcb-flow-mockup.png"
+            imgSrc="/images/pcb-flow-mockup-original.png"
             demoUrl="https://pcbflow.haydenhw.com"
           />
           <ProjectItemDescription
@@ -29,7 +28,7 @@ export default function Projects() {
           <ProjectItemImage
             alt="project demo item"
             className="pomtracker-mockup-sm-screen"
-            imgSrc="images/pomtracker-mockup.png"
+            imgSrc="/images/pomtracker-mockup.png"
             demoUrl="https://pomtracker.haydenhw.com/"
           />
           <ProjectItemDescription
@@ -44,7 +43,7 @@ export default function Projects() {
           <ProjectItemImage
             alt="project demo item"
             className="pomtracker-mockup-lg-screen"
-            imgSrc="images/pomtracker-mockup.png"
+            imgSrc="/images/pomtracker-mockup.png"
             demoUrl="https://pomtracker.haydenhw.com/"
           />
         </div>
@@ -53,13 +52,13 @@ export default function Projects() {
         <div className="project-item" >
           <ProjectItemImage
             alt="project demo item"
-            imgSrc="images/anki-assistant-mockup.png"
+            imgSrc="/images/anki-assistant-mockup.png"
             demoUrl="http://anki.haydenhw.com/"
           />
           <ProjectItemDescription
             alias="anki-assistant"
             demoUrl="http://anki.haydenhw.com/"
-            repoUrl="https://github.com/hayden7913/AnkiAssistant"
+            clientUrl="https://github.com/haydenhw/AnkiAssistant"
             title="AnkiAssistant"
             techIcons={["jquery", "sass"]}
             description="AnkiAssistant leverages the Globse language dictionary API to create a user interface that streamlines making custom Spanish language vocabulary flash card decks on Anki, the excellent spaced repetition based flash card platform."

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-export default function ContactLinks({ alias, isTop, hideEmail }) {
+export default function ContactLinks({alias, isTop, hideEmail}) {
   const contactLinkBaseClass = classNames(
     'contact-link',
     `${alias}-contact-link`, {
@@ -14,14 +14,14 @@ export default function ContactLinks({ alias, isTop, hideEmail }) {
 
   return (
     <div className={`contact-links ${alias}-contact-links`}>
-      <a className={githubLinkClass} href="https://github.com/haydenhw" target="_blank"></a>
+      <a className={githubLinkClass} href="https://github.com/haydenhw" target="_blank"/>
       <a
         className={linkedInLinkClass}
+        target="_blank"
         href="https://www.linkedin.com/in/hayden-harkwright-2588b254"
-      >
-      </a>
+      />
       {!hideEmail &&
-        <a className={mailLinkClass} href="mailto:hayden321@gmail.com" target="_blank"></a>
+      <a className={mailLinkClass} href="mailto:hayden321@gmail.com" target="_blank"/>
       }
     </div>
   );

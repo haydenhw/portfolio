@@ -1,23 +1,20 @@
-import React from "react"
+import React from 'react';
 
-function Hero({ className }) {
+export default function Hero() {
   return (
-    <div className="hero-headings-wrapper">
-      <div id="headshot" className="hero-headshot">
-        <img src="images/headshot.png" alt=""/>
-      </div>
-      <div className="hero-heading-bar-wrapper">
-        <div className="hero-heading-bar">
-          <span>HAYDEN HARKWRIGHT</span>
+    <section className="hero-section">
+      <div className="hero-headings-wrapper">
+        <img className="hero-headshot" src="images/headshot.png" alt=""/>
+        <div className="hero-heading-bar-wrapper">
+          <div className="hero-heading-bar">
+            <span>HAYDEN HARKWRIGHT</span>
+          </div>
+          <div className="hero-subheading-bar">
+            <span className="hero-subheading-profession">Javascript Developer,  </span>
+            <span className="hero-subheading-location">Oakland, California</span>
+          </div>
         </div>
-        <div className="hero-subheading-bar">
-          <span className="hero-subheading-profession">Javascript Developer,  </span>
-          <span className="hero-subheading-location">Oakland, California</span>
-        </div>
       </div>
-    </div>
-  )
+    </section>
+  );
 }
-
-
-export default Hero

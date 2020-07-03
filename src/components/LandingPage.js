@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from  'react-router';
 import { Element } from 'react-scroll';
 import About from './About';
 import Divider from './Divider';
@@ -13,13 +14,11 @@ class LandingPage extends Component {
     this.state = {
       areLinksHidden: true,
       scrollY: 0,
-      windowWidth: 0 ,
+      windowWidth: window.innerWidth,
     };
   }
 
   componentDidMount() {
-    this.setState({ windowWidth: window.innerWidth })
-
     window.addEventListener('resize', () => (
       this.setState({ windowWidth: window.innerWidth })
     ));
@@ -32,18 +31,20 @@ class LandingPage extends Component {
   toggleNavLinks = () => {
     const { areLinksHidden } = this.state;
 
-    setTimeout(() => {
-      this.setState({ areLinksHidden: !areLinksHidden });
+    setTimeout(() =>{
+      this.setState({ areLinksHidden: !areLinksHidden});
     }, 0);
   }
 
   render() {
     const { areLinksHidden, scrollY } = this.state;
+    const { pathname } = this.props.history.location;
 
     return (
       <Element name="home">
        <Nav
           areLinksHidden={areLinksHidden}
+          currentRoute={pathname}
           onMenuClick={this.toggleNavLinks}
           windowWidth={this.state.windowWidth}
           toggleMenu={this.toggleNavLinks}
@@ -57,6 +58,8 @@ class LandingPage extends Component {
             <Divider alias="about-mobile" name="about" title="about me" topBottom />
             <About />
           </Element>
+          {/*<div className={'about-spacer-temp-delete'} style={{height: '150px', background: 'rgba(0,0,0,0)'}}/>*/}
+          {/*<div className={'about-spacer-temp-delete'} style={{height: '150px', background: 'black'}}/>*/}
         </main>
         <Contact />
       </Element>
@@ -64,4 +67,4 @@ class LandingPage extends Component {
   }
 }
 
-export default LandingPage;
+export default withRouter(LandingPage);

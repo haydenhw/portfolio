@@ -22,7 +22,7 @@ export default function Contact() {
               <span className="contact-text-link-value">Oakland, CA</span>
             </div>
           </div>
-            <ContactLinks alias="footer" hideEmail/>
+          <ContactLinks alias="footer" hideEmail/>
         </div>
       </div>
     </section>

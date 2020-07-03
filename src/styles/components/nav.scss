@@ -55,8 +55,6 @@
 }
 
 .nav-left, .nav-right {
-  border: 1px solid $test-border-color;
-
   @media only screen and (min-width: $breakpoint-show-nav) {
     width: 50%;
   }

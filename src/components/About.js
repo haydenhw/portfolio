@@ -1,14 +1,12 @@
-import React from "react"
-import Divider from "./Divider"
+import React from 'react';
+import Divider from './Divider';
 
 export default function About() {
   return (
     <section name="about" className="row about-section">
       <div className="col6 col-about col-about-left">
-        <img className="about-image" src="images/headshot-with-shadow.png" alt="headshot"/>
-        <div className="about-image-container">
-          <img src="images/rock-hand.png" alt=""/>
-        </div>
+        <img className="about-image" src="/images/headshot-with-shadow.png" alt="headshot"/>
+        <div className="about-image-container"/>
       </div>
       <div className="col6 col-about col-about-right">
         <Divider alias="about" name="about" title="about me" topBottom/>
@@ -19,5 +17,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
